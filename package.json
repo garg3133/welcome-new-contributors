@@ -1,0 +1,24 @@
+{
+  "name": "welcome-new-contributors",
+  "version": "1.0.0",
+  "description": "Greet new contributors with a welcome message when they open a new issue/PR.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garg3133/welcome-new-contributors.git"
+  },
+  "keywords": [],
+  "author": "Priyansh Garg <priyanshgarg30@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garg3133/welcome-new-contributors/issues"
+  },
+  "homepage": "https://github.com/garg3133/welcome-new-contributors#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}

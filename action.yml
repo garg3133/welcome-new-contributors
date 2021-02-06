@@ -1,0 +1,16 @@
+name: "welcome-new-contributors"
+description: "Greet new contributors with a welcome message when they open a new issue/PR."
+author: 'garg3133'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN to access your repository.'
+    required: true
+  issue-message:
+    description: 'Welcome message for new issue.'
+    required: false
+  pr-message:
+    description: 'Welcome message for new issue.'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

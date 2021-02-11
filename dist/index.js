@@ -77,6 +77,9 @@ const run = async () => {
       return;
     }
 
+    // Prepare the final message
+    const final_message = message.replace(/@contributor_name/g, `@${sender}`);
+
 
     // To create a comment on a pull request, we hit the issue endpoint only.
     // See: https://octokit.github.io/rest.js/v18#pulls-create-review-comment
@@ -85,7 +88,7 @@ const run = async () => {
 
     const issueType = isIssue ? 'issue' : 'pull request';
     // Add a comment to the appropriate place
-    console.log(`Adding message: ${message} to ${issueType} ${number}`);
+    console.log(`Adding message: ${final_message} to ${issueType} ${number}`);
 
     // Add comment (greeting) to issue/PR
     try {
@@ -93,7 +96,7 @@ const run = async () => {
             owner,
             repo,
             issue_number: number,
-            body: message
+            body: final_message
         });
     } catch (error) {
         core.setFailed(error.message);

@@ -1,5 +1,5 @@
 # Welcome New Contributors
-Use this action to welcome the new contributors into your community. This action posts a welcome message whenever a new contributor opens his/her first issue or PR in your repository.
+Use this action to welcome new contributors into your community. This action posts a welcome message whenever a new contributor opens his/her first issue or PR in your repository.
 
 Additionally, you can also create your own bot account and use it to post the welcome messages instead of using the default `github-actions` bot.
 
@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Greet the contributor'
-        uses: garg3133/welcome-new-contributors@v1.1
+        uses: garg3133/welcome-new-contributors@v1.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: 'Hello there, thanks for opening your first issue. We welcome you to the community!'
@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Greet the contributor'
-        uses: garg3133/welcome-new-contributors@v1.1
+        uses: garg3133/welcome-new-contributors@v1.2
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
           is-oauth-token: true
@@ -63,6 +63,9 @@ jobs:
 ```
 
 ![Jagrati-Bot](assets/Jagrati-Bot.png)
+
+### Want to tag the contributor in the message?
+Use `@contributor_name` anywhere in the message and it will be automatically replaced by the contributor's username.
 
 # License
 The scripts and documentation in this project are released under the [MIT License](https://github.com/garg3133/welcome-new-contributors/blob/main/LICENSE)

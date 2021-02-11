@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Greet the contributor'
-        uses: garg3133/welcome-new-contributors@v1.0
+        uses: garg3133/welcome-new-contributors@v1.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: 'Hello there, thanks for opening your first issue. We welcome you to the community!'
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Greet the contributor'
-        uses: garg3133/welcome-new-contributors@v1.0
+        uses: garg3133/welcome-new-contributors@v1.1
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
           is-oauth-token: true

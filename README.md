@@ -32,6 +32,7 @@ jobs:
           pr-message: 'Hello there, thanks for opening your first Pull Request. Someone will review it soon.'
 ```
 
+![github-actions-bot](assets/github-actions-bot.png)
 
 #### Sample usage while using your own bot to post the welcome messages:
 * Create a new GitHub account to be used as the bot.
@@ -60,6 +61,8 @@ jobs:
           issue-message: 'Hello there, thanks for opening your first issue. We welcome you to the community!'
           pr-message: 'Hello there, thanks for opening your first Pull Request. Someone will review it soon.'
 ```
+
+![Jagrati-Bot](assets/Jagrati-Bot.png)
 
 # License
 The scripts and documentation in this project are released under the [MIT License](https://github.com/garg3133/welcome-new-contributors/blob/main/LICENSE)
